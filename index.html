@@ -1,25 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wordle PPY</title>
     <link rel="stylesheet" href="src/css/style.css">
-    <title>Document</title>
-</head>
-<body>
-    <div id="container">
-        <h1>Wordle PPY</h1>
-        <input type="text" pattern="[A-Za-z]" maxlength="5" id="guess-input" onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) ? true : false;">
-        <button id="guess-button">Intentar</button>
-        <p id="error">*Debes escribir una palabra con 5 letras</p>
-        <div id="grid-container">
-          <div id="grid">
-   
-          </div>
-        </div>
-        <p id="guesses"></p>
+  </head>
+  <body>
+    <h1>Wordle PPY</h1>
+    <input type="text" id="guess-input" maxlength="5" pattern="[A-Za-z]" onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) ? true : false;" />
+    <span id="error"></span>
+    <button id="guess-button">Intentar</button>
+    <p id="guesses">
+      
+    </p>
+    <div class="grid-container">
+      <div id="grid">
       </div>
+    </div>
     <script src="src/js/script.js"></script>
-</body>
+  </body>
 </html>
