@@ -13,11 +13,17 @@ h1 {
   text-align-last: center;
 }
 #error {
-  align-items: center;
-  text-align-last: center;
-  margin: auto;
-  margin-bottom: 15px;
-  color: red;
+  font-weight: 900;
+  text-align: center;
+  display: none;
+  background: #FCEABB;
+  background: -webkit-linear-gradient(to right, #FCEABB 0%, #FCCD4D 50%, #F8B500 51%, #FBDF93 100%);
+  background: -moz-linear-gradient(to right, #FCEABB 0%, #FCCD4D 50%, #F8B500 51%, #FBDF93 100%);
+  background: linear-gradient(to right, #FCEABB 0%, #FCCD4D 50%, #F8B500 51%, #FBDF93 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
 }
 
 #guess-input {
@@ -61,10 +67,32 @@ button:active {
   margin: 30px;
 }
 
-#grid {
-  display: block;
-  margin: 0 auto 20px;
-  padding: 10px;
-  font-size: 18px;
-  width: 350px;
+.grid-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+ }
+ #grid{
+  display: grid;
+  align-items: center;
+  justify-items: center;
+ }
+ .row-letter {
+  width: 48px;
+  height: 48px;
+  font-size: 22px;
+  display: inline-block;
+  text-align: center;
+  line-height: 48px;
+  border: 2px solid #dee1e9;
+  color: #fff;
+  margin: 2px;
+  font-weight: 700;
+  border-radius: 5px;
+
 }
+    
+ .row{
+     margin-bottom: 5px;
+ }

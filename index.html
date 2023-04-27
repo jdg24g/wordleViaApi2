@@ -12,10 +12,11 @@
         <h1>Wordle PPY</h1>
         <input type="text" pattern="[A-Za-z]" maxlength="5" id="guess-input" onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) ? true : false;">
         <button id="guess-button">Intentar</button>
-        <div id="grid">
-          <article id="cuadro">
+        <p id="error">*Debes escribir una palabra con 5 letras</p>
+        <div id="grid-container">
+          <div id="grid">
    
-          </article>
+          </div>
         </div>
         <p id="guesses"></p>
       </div>
