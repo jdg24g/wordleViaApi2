@@ -33,23 +33,7 @@ h1 {
    text-align: center;
    margin-top: 10px;
  }
-#instruccion{
-    margin: 0 auto;
-    width: 80%;
-    max-width: 600px;
-    padding: 0.3rem;
-    border-radius: 20px;
-    background: #fff;
-    box-shadow: 10px 5px 30px rgba(0,0,0,0.1);
-}
-@media (max-width: 600px) {
-  #instruccion {
-    width: 90%;
-    max-width: none;
-    padding: 1rem;
-    font-size: 14px;
-  }
-}
+
 
 ul {
   text-align: center;
